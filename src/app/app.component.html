@@ -7,9 +7,12 @@
 <body>
   <div class="main-container">
     <div class="name-container">
-      <div class="input-box" [ngStyle]="{'left': offsets[offsetIndex] + 'em'}" [ngClass]="{'fade': offsetIndex == offsets.length}"></div>
+      <div class="input-box" [ngStyle]="{'left': offsets[offsetIndex] + 'em'}" [ngClass]="{'fadeOut': offsetIndex == offsets.length}"></div>
       <h1 class="my-name">{{currentPrinted}}</h1>
     </div>
+    <h1 class="description" [ngClass]="{'fadeIn': offsetIndex == offsets.length}">
+      Ленивец, задрот, разработчик, ценитель хаскеля, знает JavaScript
+    </h1>
   </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Lab1-AboutMe';
-
+  constructor (private title: Title) {};
+  private _title = 'Обо мне';
 
   ngOnInit(): void {
+
+    this.title.setTitle(this._title);
+
     const interval = setInterval(()=>{
       this.currentPrinted += this.myName[this.offsetIndex++];
       if (this.offsetIndex >= this.offsets.length) clearInterval(interval);

@@ -19,7 +19,6 @@
 .input-box {
     position: absolute;
     top: 1.3em;
-    /* opacity: 0.65; */
     width: 3em;
     height: 5em;
     background-color: white;
@@ -34,17 +33,21 @@
     min-height: 120px;
 }
 
-.fade {
-    animation-name: fadeOut;
-    animation-duration: 1.5s;
+.fadeOut {
+    transition: 1.5s;
     opacity: 0;
 }
 
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.description {
+    text-align: center;
+    margin-top: 0.5em;
+    color: white;
+    font-family: monospace;
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: 1s linear;
+    transition-delay: 1.5s;
 }
