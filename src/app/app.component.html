@@ -6,7 +6,10 @@
 </head>
 <body>
   <div class="main-container">
-    <h1 class="my-name">Иван Морозов</h1>
+    <div class="name-container">
+      <div class="input-box" [ngStyle]="{'left': offsets[offsetIndex] + 'em'}" [ngClass]="{'fade': offsetIndex == offsets.length}"></div>
+      <h1 class="my-name">{{currentPrinted}}</h1>
+    </div>
   </div>
 </body>
 </html>

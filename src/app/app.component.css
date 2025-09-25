@@ -12,8 +12,39 @@
     align-items: center;
 }
 
+.name-container {
+    position: relative;
+}
+
+.input-box {
+    position: absolute;
+    top: 1.3em;
+    /* opacity: 0.65; */
+    width: 3em;
+    height: 5em;
+    background-color: white;
+}
+
 .my-name {
     font-size: 88px;
-    font-family: sans-serif;
+    font-family: monospace;
     color: white;
+    text-wrap-mode: nowrap;
+    min-width: 52px;
+    min-height: 120px;
+}
+
+.fade {
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
