@@ -51,3 +51,20 @@
     transition: 1s linear;
     transition-delay: 1.5s;
 }
+
+#my-img {
+    width: 30em;
+}
+
+.img-container {
+    width: 0em;
+    height: 0em;
+    overflow: hidden;
+}
+
+.img-container.full-height {
+    width: initial;
+    height: 30em;
+    transition: 3s;
+    transition-delay: 2.7s;
+}
