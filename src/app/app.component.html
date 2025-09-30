@@ -6,10 +6,17 @@
 </head>
 <body>
   <div class="main-container">
+    
     <div [ngClass]="{'full-height': offsetIndex == offsets.length}" class="img-container">
       <img id="my-img" src="../assets/professional-photo-cropped.jpg" alt="Здесь должно быть моё фото">
     </div>
     <div class="name-container">
+      <a [ngClass]="{'git-logo-post': offsetIndex == offsets.length}" class="git-logo" href="https://github.com/akasaru074" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/github-mark-white.svg" alt="GitHub">
+      </a>
+      <a [ngClass]="{'email-post': offsetIndex == offsets.length}" class="email"  href="mailto:akasaru075@mail.ru">
+        <img src="../assets/email-circle.svg" alt="email">
+      </a>
       <div class="input-box" [ngStyle]="{'left': offsets[offsetIndex] + 'em'}" [ngClass]="{'fadeOut': offsetIndex == offsets.length}"></div>
       <h1 class="my-name">{{currentPrinted}}</h1>
     </div>

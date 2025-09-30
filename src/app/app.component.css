@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .main-container {
     min-height: 97vh;
     flex-direction: column;
@@ -67,4 +71,36 @@
     height: 30em;
     transition: 3s;
     transition-delay: 2.7s;
+}
+
+.git-logo {
+    position: absolute;
+    left: -60em;
+    rotate: -180deg;
+}
+
+.git-logo-post {
+    rotate: 0deg;
+    left: -10em;
+    transition: 1s ease-out;
+    transition-delay: 7s;
+}
+
+.email {
+    position: absolute;
+    right: -60em;
+    cursor: pointer;
+    rotate: 180deg;
+    overflow: hidden;
+}
+
+.email img {
+    width: 112px;
+}
+
+.email-post {
+    transition: 1s ease-out;
+    transition-delay: 7s;
+    right: -10em;
+    rotate: 0deg;
 }
