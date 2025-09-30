@@ -76,7 +76,7 @@ body {
 
 .git-logo {
     position: absolute;
-    left: -60em;
+    left: -70em;
     rotate: -180deg;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .email {
     position: absolute;
-    right: -60em;
+    right: -70em;
     cursor: pointer;
     rotate: 180deg;
     overflow: hidden;
