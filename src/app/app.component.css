@@ -79,6 +79,9 @@ body {
     left: -70em;
     rotate: -180deg;
 }
+.git-logo.mobile {
+    position: relative;
+}
 
 .git-logo-post {
     rotate: 0deg;
@@ -95,8 +98,8 @@ body {
     overflow: hidden;
 }
 
-.email img {
-    width: 112px;
+.email.mobile {
+    position: relative;
 }
 
 .email-post {
@@ -104,4 +107,82 @@ body {
     transition-delay: 7s;
     right: -10em;
     rotate: 0deg;
+}
+
+.git-logo img {
+    width: 100x;
+    height: 97px;
+    position: relative;
+    bottom: 8px;
+}
+
+.email img {
+    width: 115px;
+    height: 115px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.desktop {
+    display: unset;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #my-img {
+        width: 100%;
+    }
+
+    .main-container {
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    body {
+        min-width: 480px;
+        max-width: 98vw;
+        min-height: 100vh;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: unset;
+    }
+
+    .input-box {
+        display: none;
+    }
+
+    .my-name {
+        font-size: 72px;
+        text-wrap-mode: wrap;
+        text-align: center;
+        line-height: 1.25em;
+    }
+
+    .description {
+        margin: 0 10px;
+    }
+
+    .git-logo-post {
+        left: 0;
+    }
+    
+    .email-post {
+        right: 0;
+    }
+
 }
